@@ -14,11 +14,13 @@ function getWeather(searchQuery) {
     params.id = 4930956;
   }
   $.ajax(url + $.param(params), {
-    success: function (data) {
-      $('.city').text(data.name);
-      $('.temp').text(data.main.temp + ' °F');
-    }
-  });
+  success: function (data) {
+    $('.city').text(data.name);
+    $('.temp').text(data.main.temp + ' °F');
+  }, error: function (error) {
+    $('.error-message').text('An error occurred!');
+  }
+});
 }
 
 function searchWeather() {
@@ -26,7 +28,6 @@ function searchWeather() {
   getWeather(searchQuery);
 }
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hey it's a new paragraph wow.";
-}
-
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "Hey it's a new paragraph wow.";
+// }
