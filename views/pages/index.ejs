@@ -10,14 +10,22 @@
 
 <body>
 
-  <h1>Weather App!</h1>
+  <div class="header">
+  	<div class="header-title"><h4>Weather App!</h4></div>
+  	<div class="search-container">
+	  <input class="search" type="text" placeholder="Enter city name..." />
+	  <button type="button" onclick="searchWeather()">
+		Search
+	  </button>
+	</div>
+  </div>
+  <div class="clear"></div>
+  <div>
+	<p>
+	<div class="city"></div><div class="temp"></div>
+	</p>
+  </div>
 
-  <div class="city"></div><div class="temp"></div>
-
-  <input class="search" type="text" placeholder="Enter city name..." />
-  <button type="button" onclick="searchWeather()">
-	Search
-  </button>
 
   <div class="error-message"></div>
 
