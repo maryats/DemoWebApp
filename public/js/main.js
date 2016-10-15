@@ -27,7 +27,3 @@ function searchWeather() {
   var searchQuery = $('.search').val(); // grab value from search input
   getWeather(searchQuery);
 }
-
-// function myFunction() {
-//   document.getElementById("demo").innerHTML = "Hey it's a new paragraph wow.";
-// }
