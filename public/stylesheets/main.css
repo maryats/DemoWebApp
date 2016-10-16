@@ -1,5 +1,6 @@
 body {
-  background: url(https://maps.googleapis.com/maps/api/place/photo?boston);
+  background: #333333;
+  /*background: url(https://maps.googleapis.com/maps/api/place/photo?boston);*/
 }
 
 h4 {
