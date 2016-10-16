@@ -24,6 +24,7 @@ function getWeather(searchQuery) {
 }
 
 function searchWeather() {
+  $('.error-message').text('');
   var searchQuery = $('.search').val(); // grab value from search input
   getWeather(searchQuery);
 }

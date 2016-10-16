@@ -1,5 +1,5 @@
 body {
-  background-color: #333333;
+  background: url(https://maps.googleapis.com/maps/api/place/photo?boston);
 }
 
 h4 {
@@ -46,4 +46,11 @@ p {
 	color: white;
 	text-align: center;
 	margin-top: 10px;
+}
+
+.error-message {
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: .6rem;
+	color: #ff9999;
+	margin-top: 2px;
 }
