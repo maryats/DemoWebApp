@@ -1,18 +1,42 @@
-body {
-  background: #333333;
-  /*background: url(https://maps.googleapis.com/maps/api/place/photo?boston);*/
+html {
+	font-family: "Helvetica", "Arial", sans-serif;
 }
 
-h4 {
-  font-family: "Helvetica", "Arial", sans-serif;
-  color: white;
-  text-align: left;
+body {
+	background: #333333;
+	margin: 0 auto;
+	padding: 0;
+}
+
+h5 {
+	color: white;
+	text-align: left;
 }
 
 p {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 30px;
-  text-align: center;
+	font-size: 30px;
+	text-align: center;
+}
+
+a, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	font-style: italic;
+	color: #79fa5f;
+}
+
+.bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.25);
+	height: 100vh;
 }
 
 .header {
@@ -28,12 +52,41 @@ p {
 	margin-top: 22px;
 }
 
+.search, #search-button {
+	-webkit-box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.search {
+	border: none;
+	border-radius: 50px;
+	padding: 6px 8px;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#search-button:hover {
+	border: 1px solid #79fa5f;
+	color: #79fa5f;
+}
+
+#search-button {
+	height: 1.5rem;
+	width: 1.5rem;
+	border: 1px solid white;
+	border-radius: 50px;
+	padding: 5px;
+	background-color: transparent;
+	color: white;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
 .clear {
 	clear: left;
 	clear: right;
 }
 
-.city {
+.city  {
 	font-family: "Helvetica", "Arial", sans-serif;
 	font-size: 1.7rem;
 	color: white;
@@ -49,9 +102,18 @@ p {
 	margin-top: 10px;
 }
 
-.error-message {
+.photo-credits {
+	font-size: .7rem;
+	color: white;
+	position: absolute;
+	bottom: 6px;
+	left: 15px;
+}
+
+.error-message, {
 	font-family: "Helvetica", "Arial", sans-serif;
 	font-size: .6rem;
 	color: #ff9999;
 	margin-top: 2px;
+	position: fixed;
 }
